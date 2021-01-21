@@ -2,8 +2,8 @@ import { Router } from "express"
 
 const router = Router()
 
-import * as productCtrl from '../controllers/products.controller'
+import * as productsCtrl from '../controllers/products.controller'
 
-router.get('/',(req,res)=>res.json('get products'))
+router.get('/', productsCtrl.getProducts)
 
 export default router;
