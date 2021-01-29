@@ -1,5 +1,7 @@
-export const createProduct = (req, res)=>{
+import Product from '../models/Product'
 
+export const createProduct = (req, res)=>{
+    res.json('creating product')
 }
 
 export const getProducts = (req, res)=>{
