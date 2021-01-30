@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "a5eae6ee-63b8-4b39-93be-f93b6e2e987e",
+		"name": "API company products",
+		"description": "this is API Company products ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "http://localhost:4000/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\":\"laptop lenovo\",\n   \"category\":\"laptops\" ,\n   \"price\":999.99,\n   \"imgURL\": \"https://compuusa.com.pe/5542/laptop-lenovo-ideapad-3-14iml05-i5-10210u.jpg\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"laptop hp\",\n    \"price\":999.99,\n    \"category\":\"laptops\",\n    \"imgURL\":\"https://www.lenovo.com/medias/lenovo-laptops-ideapad-5i-15-series-front-thumbnail.png\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": []
+		},
+		{
+			"name": "auth",
+			"item": []
+		}
+	]
+}
